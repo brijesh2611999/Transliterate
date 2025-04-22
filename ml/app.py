@@ -97,5 +97,5 @@ async def api_transliterate(request: Request):
 async def home():
     return {"message": "English to Hindi Transliterator API is running"}
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=8000)
