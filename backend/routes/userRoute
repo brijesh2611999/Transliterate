@@ -1,0 +1,41 @@
+const express = require('express');
+const router = express.Router();
+
+const {signup,sendotp,login,verifyEmail,verifyOtp,resetPassword} = require('../controllers/Auth');
+const {auth} = require('../middleware/auth');
+
+
+//route for signup
+router.post('/signup',signup);
+
+//login route
+router.post('/login',login);
+
+
+//sendotp route
+router.post('/sendotp',sendotp);
+
+//protected routes for authorization
+
+router.get('/protected', auth, (req, res) => {
+    res.status(200).json({
+      success: true,
+      message: 'Token verified successfully',
+    });
+  });
+  
+  
+
+//change password route
+// router.post('/changepassword',auth, changePassword);
+
+//forgot password route
+// router.post('/forgot-password',auth,forgotPassword);
+//verify email route
+// forget password ->email->otp->reset
+router.post('/verify-email',verifyEmail);
+router.post('/verify-otp',verifyOtp);
+router.post('/reset-password',resetPassword);
+
+
+module.exports = router;
