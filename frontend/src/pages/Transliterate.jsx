@@ -49,7 +49,9 @@ const Transliterator = () => {
     setResult(null);
     
     try {
-      const response = await fetch('http://127.0.0.1:8000/transliterate', {
+      const url = "https://transliterate-python.onrender.com/transliterate";
+      // const url = 'http://127.0.0.1:8000/transliterate';
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

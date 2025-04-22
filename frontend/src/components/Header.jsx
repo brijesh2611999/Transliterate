@@ -17,11 +17,11 @@ const Header = () => {
       }
 
       try {
-        const url = "http://localhost:4000/api/v1/protected";
-        // const url = "https://algorithm-visualizer-amx3.onrender.com/api/v1/protected";
+        // const url = "http://localhost:4000/api/v1/protected";
+        const url = "https://transliterate.onrender.com/api/v1/protected";
         const res = await fetch(url, {
           method: "GET",
-          // credentials: "include",
+          credentials: "include",
           headers: {
             Authorization: `Bearer ${token}`,
           },

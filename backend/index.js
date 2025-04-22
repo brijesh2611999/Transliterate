@@ -13,8 +13,8 @@ app.use(express.json());
 const cors = require("cors");
 app.use(
 	cors({
-		// // origin:"http://localhost:5173/",
-		origin:"http://localhost:5173",
+		origin:"https://transliterate-two.vercel.app",
+		// origin:"http://localhost:5173",
 		// // origin: "http://192.168.108.244:3000", // Replace with your frontend URL
 		// // origin: "https://algorithm-visualizer-one-delta.vercel.app", // Replace with your frontend URL
 		credentials: true,

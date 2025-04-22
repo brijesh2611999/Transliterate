@@ -31,8 +31,8 @@ function Signup() {
     }
 
     try {
-    //   const url = "https://algorithm-visualizer-amx3.onrender.com/api/v1/sendotp";
-      const url = "http://localhost:4000/api/v1/sendotp";
+      const url = "https://transliterate.onrender.com/api/v1/sendotp";
+      // const url = "http://localhost:4000/api/v1/sendotp";
       const response = await fetch(url, {
         method: "POST",
         credentials: 'include',

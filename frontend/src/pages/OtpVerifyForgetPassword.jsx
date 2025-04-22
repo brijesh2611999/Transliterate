@@ -34,8 +34,8 @@ function OtpVerifyForgetPassword() {
     }
 
     try {
-    //   const url = "https://algorithm-visualizer-amx3.onrender.com/api/v1/verify-otp";
-      const url = "http://localhost:4000/api/v1/verify-otp";
+      const url = "https://transliterate.onrender.com/api/v1/verify-otp";
+      // const url = "http://localhost:4000/api/v1/verify-otp";
       const response = await fetch(url, {
         method: "POST",
         credentials: 'include',
