@@ -24,7 +24,7 @@ app.use(
 );
 
 // Manually handle preflight OPTIONS request
-// app.options("*", cors()); 
+app.options("*", cors()); 
 
 
 //rotues
