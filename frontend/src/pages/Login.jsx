@@ -29,7 +29,7 @@ function Login() {
       // const url = "http://localhost:4000/api/v1/login";
       const response = await fetch(url, {
         method: "POST",
-        // credentials: 'include', when you deploy then on it
+        credentials: 'include',
         headers: {
           "Content-Type": "application/json",
         },

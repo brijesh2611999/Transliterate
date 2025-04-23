@@ -53,6 +53,7 @@ const Transliterator = () => {
       // const url = 'http://127.0.0.1:8000/transliterate';
       const response = await fetch(url, {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
